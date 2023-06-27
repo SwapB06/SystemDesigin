@@ -82,6 +82,7 @@ func isThereWinner(row, column int, pieceType PieceType) bool {
 	diagonalMatch := true
 	antiDiagonalMatch := true
 
+	// TODO: Optimize to O(1) time complexity (Hint: Use n Queens Problem Logic)
 	//need to check in row
 	for i := 0; i < G.GameBoard.Size; i++ {
 

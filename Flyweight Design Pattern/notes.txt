@@ -1,0 +1,18 @@
+Flyweight Design Pattern
+
+Definition
+    It's one of the structural design Pattern
+    This pattern helps to reduce the memory usage by sharing data among multiple objects
+
+Observe and Understand where to use this pattern:
+    - when memory is limited
+    - when objects shared data
+        o intrinsic data: shared among objects and remian same once defined one value
+        o Extrinsic data: Changes based on client input and differes from one object to another
+    - creation of object is expensive
+
+This is how it solves issue:
+    - From object, remove all the Extrinsic data  and keep intrinsic data (this object is called flyweight object)
+    - this flyweight class can be immutable
+    - Extrinsic data can be passed to the flyweight class in method parameter
+    - once the flyweight object is created, it is cached and reused whenever required
