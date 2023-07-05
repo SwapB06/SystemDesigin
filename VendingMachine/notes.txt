@@ -1,0 +1,5 @@
+State Design Pattern
+
+if Operations are state wise
+
+other examples, design TV
